@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import { Box, Flex, Spacer, Text } from '@chakra-ui/react';
+
+function Navbar() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Flex bgColor="black" p={5} alignItems="center" >
+      <Box>
+        <Text fontSize="20"  className="nav" fontWeight="bold">Web site</Text>
+      </Box>
+      <Spacer />
+      <Box mx={4} fontSize="20" className="nav">
+        <Text>Home</Text>
+      </Box>
+      <Box mx={4} Size="20" className="nav">
+        <Text>About</Text>
+      </Box>
+      <Box mx={4} Size="20" className="nav">
+        <Text>Pages</Text>
+      </Box>
+      <Box mx={4} Size="20" className="nav">
+        <Text>About us</Text>
+      </Box>
+      <Box mx={4} Size="20" className="nav">
+        <Text>Contact</Text>
+      </Box>
+    </Flex>
   );
 }
 
-export default App;
+export default Navbar;
